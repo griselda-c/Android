@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.griselda.clase2_layouts.HomeActivity"
+    tools:context="com.example.griselda.clase2_layouts.activities.HomeActivity"
     android:orientation="vertical">
 
     <ImageView
@@ -22,10 +22,61 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hola User!!!!"
-        android:textSize="20sp"
+        android:text="Nombre: "
+        android:textSize="@dimen/size_titulo"
         android:textStyle="bold"
         android:layout_below="@+id/imagen"
-        android:layout_centerInParent="true"/>
+        android:id="@+id/lblNombre"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/lblNombre"
+        android:layout_below="@+id/imagen"
+        android:text=""
+        android:layout_marginLeft="5dp"
+        android:id="@+id/username"
+        android:textSize="@dimen/size_titulo"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblNombre"
+        android:text="Apellido :"
+        android:textSize="@dimen/size_titulo"
+        android:textStyle="bold"
+        android:id="@+id/lblApellido"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:text=""
+        android:textSize="@dimen/size_titulo"
+        android:id="@+id/apellido"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblApellido"
+        android:text="DNI:"
+        android:textSize="@dimen/size_titulo"
+        android:textStyle="bold"
+        android:id="@+id/lbldni"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/apellido"
+        android:layout_below="@+id/apellido"
+        android:layout_alignBottom="@+id/lbldni"
+        android:text=""
+        android:textSize="@dimen/size_titulo"
+        android:id="@+id/dni"/>
+
 
 </RelativeLayout>
